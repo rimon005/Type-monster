@@ -122,6 +122,7 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+      // console.log(startTime);
     }
     count--;
   }, 1000);
@@ -136,9 +137,12 @@ displayHistory();
 // Show typing time spent
 setInterval(() => {
   const currentTime = new Date().getTime();
+  // console.log(currentTime);
   const timeSpent = (currentTime - startTime) / 1000;
+  const timeRound = Math.round(timeSpent);
+  // console.log(timeRound);
 
   document.getElementById("show-time").innerHTML = `${
-    startTime ? timeSpent : 0
+    startTime ? timeRound : 0
   } seconds`;
 }, 1000);
