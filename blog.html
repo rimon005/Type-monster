@@ -22,6 +22,12 @@
         <p><span>Ans:</span>The main difference between the local scope and block scope is that the block statements (e.g. if conditions or for loops), don't create a new scope. So the var keyword will not have an effect, because the variables are still in the same scope. ES6 introduced block scope by using the let and const keywords</p>
         <p><span>Q:3</span>How does javascript event loop work ???</p>
         <p><span>Ans:</span>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+        <p><span>Q:4</span>How to get undefined in javascript ???</p>
+        <p><span>Ans:</span>Undefined is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined.
+
+            In all non-legacy browsers, undefined is a non-configurable, non-writable property. (Even when this is not the case, avoid overriding it.)
+            
+            A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned..</p>
     </div>
 </body>
 </html>
